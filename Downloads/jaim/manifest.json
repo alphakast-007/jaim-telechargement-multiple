@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Jaim — Téléchargement multiple",
+  "version": "1.2.1",
+  "description": "Télécharge les fichiers directs et repère les images et médias des pages ouvertes.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["tabs", "downloads", "identity", "tabGroups", "scripting"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["https://www.googleapis.com/*"],
+  "oauth2": {
+    "client_id": "190989227981-uuook4ms1cpab2o8hk83lpm00dpip3ao.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/drive.readonly"]
+  },
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Téléchargement multiple",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup.html"
+  }
+}

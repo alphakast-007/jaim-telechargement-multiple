@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téléchargement multiple</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img class="mark" src="icons/icon128.png" alt="">
+      <div><h1>Téléchargement multiple</h1><p>Choisissez les onglets à télécharger.</p></div>
+    </header>
+    <label class="group-filter" for="groupFilter">Groupe Chrome</label>
+    <select id="groupFilter"><option value="all">Tous les onglets</option></select>
+    <div class="toolbar">
+      <span id="count">Chargement…</span>
+      <button id="selectAll" class="text-button" type="button">Tout sélectionner</button>
+    </div>
+    <ul id="tabs" aria-label="Onglets ouverts"></ul>
+    <div id="status" role="status" aria-live="polite"></div>
+    <button id="reauth" class="text-button" type="button" hidden>Reconnecter le compte de Chrome</button>
+    <button id="download" class="primary" type="button" disabled>Télécharger la sélection</button>
+    <button id="scanMedia" class="secondary" type="button">Scanner les images et médias du groupe</button>
+    <button id="downloadMedia" class="secondary" type="button" hidden>Télécharger les médias trouvés</button>
+    <p class="note">Le scan repère les images et médias exposés par les pages. Il ne peut pas extraire les flux protégés ou DRM. Pour Drive, Google demandera une autorisation en lecture seule.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

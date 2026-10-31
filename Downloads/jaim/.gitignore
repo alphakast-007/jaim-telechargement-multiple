@@ -1,0 +1,13 @@
+# Fichiers locaux et secrets
+*.log
+cookies.txt
+cookies*.txt
+token.json
+client_secret*.json
+.env
+.env.*
+
+# Dossiers Git et éditeurs
+.git/
+.vscode/
+.idea/
